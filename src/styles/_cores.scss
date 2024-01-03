@@ -1,0 +1,20 @@
+@import "./core/colors";
+@import "./core/mixins";
+@import "./core/fonts";
+
+@font-face {
+  font-family: "Header";
+  src: url("../assets/fonts/NotoSerif_Condensed-ExtraBold.ttf");
+  width: 125px;
+}
+
+@font-face {
+  font-family: "SubHeader";
+  src: url("../assets/fonts/NotoSerif_Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Text";
+  src: url("../assets/fonts/NotoSerif_Condensed-Medium.ttf");
+  font-weight: bold;
+}

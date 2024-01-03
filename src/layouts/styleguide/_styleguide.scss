@@ -1,0 +1,70 @@
+.styleguide {
+  @include flex;
+
+  & .header {
+    margin: 0;
+    @include flex;
+    background-color: $color;
+    color: $background-color;
+    padding: 1rem;
+
+    width: 100%;
+  }
+
+  &__colors {
+    @include flex(row);
+    gap: 1rem;
+    margin: 2rem 0;
+
+    & div {
+      @include flex;
+      width: 5rem;
+      height: 5rem;
+      border: 1px solid $color;
+    }
+
+    & .white {
+      background-color: $white;
+      color: $black;
+    }
+    & .light {
+      background-color: $light;
+      color: $black;
+    }
+    & .medium {
+      background-color: $medium;
+    }
+    & .dark {
+      background-color: $dark;
+    }
+    & .black {
+      background-color: $black;
+    }
+  }
+  &__icons {
+    @include flex(row);
+    gap: 1rem;
+  }
+  &__headings {
+    & h1 {
+      font-size: $h1;
+      background-color: $black;
+      color: $white;
+    }
+    & h2 {
+      font-size: $h2;
+    }
+    & h3 {
+      font-size: $h3;
+    }
+    & h4 {
+      font-size: $h4;
+    }
+    & h5 {
+      font-size: $h5;
+    }
+    & h6 {
+      font-size: $h6;
+    }
+  }
+}

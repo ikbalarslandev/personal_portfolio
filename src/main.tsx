@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
+import StyleGuide from "./layouts/styleguide/StyleGuide.tsx";
+import "./styles/main.scss";
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
@@ -25,6 +25,6 @@ Sentry.init({
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <StyleGuide />
   </React.StrictMode>
 );
