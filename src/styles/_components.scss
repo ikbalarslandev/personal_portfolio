@@ -1,5 +1,6 @@
 //pages
 @import "../layouts/styleguide/styleguide";
+@import "../pages/home";
 
 // components
 @import "../components/theme/theme";
@@ -7,3 +8,6 @@
 @import "../components/showarrow/showarrow";
 @import "../components/hamburger/hamburger";
 @import "../components/width/with";
+
+//widgets
+@import "../widgets/nav";

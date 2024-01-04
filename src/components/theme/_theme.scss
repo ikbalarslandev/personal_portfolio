@@ -2,13 +2,28 @@
   &__icon {
     color: $color; // Replace $color with your desired color value
     transition: transform 0.3s ease; // Add transition for color change
-    font-size: $h4;
+    font-size: $h5;
+    width: 2rem;
   }
   &__icon:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 
   &:active {
-    transform: translateY(2px);
+    transform: translateY(1px);
+  }
+}
+
+@media (prefer-colors-theme: dark) {
+  body {
+    background-color: $background-color; // Replace $background-color with your desired color value
+    color: $color; // Replace $color with your desired color value
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: $background-color; // Replace $background-color with your desired color value
+    color: red; // Replace $color with your desired color value
   }
 }

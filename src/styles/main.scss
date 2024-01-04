@@ -5,8 +5,7 @@ body {
   background-color: $background-color;
   color: $color;
 
-  margin: 0;
-  padding: 0;
+  @include reset;
 
   font-family: "Text";
 

@@ -1,17 +1,16 @@
 .hamburger {
-  width: 9rem;
-  height: 9rem;
+  @include box(2.7rem);
 
   @include flex;
-  gap: 1rem;
+  gap: 0.3rem;
   flex-wrap: wrap;
 
   & span {
     @include flex;
-    border: 2px solid $color;
+    border: 0.1rem solid $color;
     border-radius: 999px;
-    height: 2rem;
-    width: 2rem;
+    @include box(0.5rem);
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover &-hover {

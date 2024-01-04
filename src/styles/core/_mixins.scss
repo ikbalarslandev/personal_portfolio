@@ -5,7 +5,20 @@
   justify-content: $justify;
 }
 
+@mixin box($size: 3rem) {
+  width: $size;
+  height: $size;
+}
+
 @mixin border {
   border: 1px solid black;
   border-radius: 5px;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }

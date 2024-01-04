@@ -15,5 +15,6 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "jsx-a11y/anchor-is-valid": "off",
   },
 };

@@ -1,0 +1,25 @@
+.nav {
+  font-size: $h5;
+  @include flex(row, space-between, center);
+  margin: 1.2rem 1.5rem;
+
+  position: absolute;
+  top: 0;
+  width: 96%;
+  z-index: 100;
+
+  &__logo {
+    font-size: $h2;
+  }
+
+  &__items {
+    @include flex(row, space-between, center);
+    gap: 2rem;
+    margin: 0 2rem;
+    &-toggle {
+      @include flex(row, space-between, center);
+      gap: 1rem;
+      margin: 0 2rem;
+    }
+  }
+}

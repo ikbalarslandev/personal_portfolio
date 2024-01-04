@@ -1,0 +1,24 @@
+.home {
+  height: 100vh;
+
+  @include flex;
+  h1 {
+    @include reset;
+    color: $dark;
+    strong {
+      color: $light;
+    }
+  }
+
+  p {
+    font-size: $h3;
+    @include reset;
+    margin-bottom: 2rem;
+    color: $medium;
+  }
+
+  &__links {
+    @include flex(row, space-between, center);
+    gap: 3rem;
+  }
+}
