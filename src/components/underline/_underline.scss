@@ -1,0 +1,21 @@
+.underline {
+  @include flex(row);
+  gap: 0.6rem;
+  position: relative;
+  font-size: $h4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: $color;
+    transition: width 0.4s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.showarrow {
+  @include flex(row);
+  gap: 4rem;
+  font-size: $h3;
+  overflow: hidden;
+
+  &-animation {
+    @include flex(row);
+    gap: 0.5rem;
+    position: relative;
+
+    transition: transform 0.5s cubic-bezier(0.6, -0.5, 0.2, 1);
+    transform: translateX(-2.3rem);
+  }
+
+  &:hover &-animation {
+    transform: translateX(0);
+  }
+}

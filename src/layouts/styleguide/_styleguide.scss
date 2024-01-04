@@ -45,6 +45,10 @@
     @include flex(row);
     gap: 1rem;
   }
+  &__animations {
+    @include flex;
+    gap: 1rem;
+  }
   &__headings {
     & h1 {
       font-size: $h1;

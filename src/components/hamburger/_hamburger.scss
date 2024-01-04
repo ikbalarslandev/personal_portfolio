@@ -1,0 +1,25 @@
+.hamburger {
+  width: 9rem;
+  height: 9rem;
+
+  @include flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  & span {
+    @include flex;
+    border: 2px solid $color;
+    border-radius: 999px;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &:hover &-hover {
+    color: $background-color;
+    border-color: $background-color;
+  }
+
+  &:hover &-hover.unhide-visibility {
+    border-color: $color;
+  }
+}

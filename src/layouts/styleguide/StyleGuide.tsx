@@ -4,6 +4,13 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
+//animations
+import Theme from "../../components/theme/Theme";
+import Underline from "../../components/underline/Underline";
+import Showarrow from "../../components/showarrow/Showarrow";
+import Hamburger from "../../components/hamburger/Hamburger";
+import Width from "../../components/width/Width";
+
 const StyleGuide = () => (
   <div className="styleguide">
     <h1 className="header">Style Guide</h1>
@@ -21,6 +28,14 @@ const StyleGuide = () => (
       <FontAwesomeIcon icon={faArrowDown} />
       <FontAwesomeIcon icon={faSun} />
       <FontAwesomeIcon icon={faMoon} />
+    </div>
+    <div className="styleguide__animations">
+      <h3>Animations</h3>
+      <Width text="Menu Item Text" />
+      <Hamburger />
+      <Theme />
+      <Underline text="some Text" />
+      <Showarrow work="work" genre="genre" />
     </div>
     <div className="styleguide__headings">
       <h1>This is heading h1</h1>
