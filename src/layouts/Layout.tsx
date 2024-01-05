@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
-import Nav from "../widgets/Nav";
 import "../styles/main.scss";
+
+import Nav from "../widgets/Nav";
+import Menu from "../pages/menu/Menu";
 
 const Layout = () => {
   return (
     <>
       <Nav />
+      <Menu />
       <Outlet />
     </>
   );

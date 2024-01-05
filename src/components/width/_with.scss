@@ -1,10 +1,27 @@
 .width-animation {
-  letter-spacing: 10px;
+  @include reset;
+  letter-spacing: 3px;
   transform-origin: left center;
+  font-size: $h1;
+  position: relative;
 
   &:hover {
     letter-spacing: 2px;
     transform: scaleX(0.9);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.6s ease;
+  }
+
+  &__number {
+    @include reset;
+    position: relative;
+    top: -2.2rem;
+    left: -1.5rem;
+    font-size: $h6;
+  }
+}
+
+@media (min-width: 500px) {
+  .width-animation {
+    font-size: $xl;
   }
 }

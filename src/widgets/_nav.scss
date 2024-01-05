@@ -1,6 +1,7 @@
 .nav {
   @include flex(row, space-between, center);
   margin: 1rem;
+  position: relative;
 
   font-size: $small;
   color: $medium;
@@ -19,11 +20,33 @@
     gap: 1rem;
     margin: 0 2rem;
   }
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 4rem;
+
+    display: none;
+    transition: left 0.3 ease;
+
+    background-color: $background-color;
+  }
 }
 
 @media (min-width: 500px) {
   .nav {
     margin-top: 2rem;
     margin-left: 2rem;
+
+    &__menu {
+      margin-left: 7rem;
+    }
   }
+}
+
+.show-menu {
+  @include flex(column, center, start);
+  gap: 1rem;
 }

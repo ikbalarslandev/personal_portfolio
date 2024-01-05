@@ -1,4 +1,4 @@
-import Underline from "../components/underline/Underline";
+import Underline from "../../components/underline/Underline";
 
 const Home = () => {
   return (
