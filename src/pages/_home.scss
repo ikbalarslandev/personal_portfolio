@@ -1,24 +1,59 @@
 .home {
-  height: 100vh;
-
   @include flex;
+  margin: 3rem;
+
+  height: 90vh;
+
   h1 {
+    @include flex;
     @include reset;
+
     color: $dark;
     strong {
       color: $light;
     }
+    font-size: $h2;
   }
 
   p {
-    font-size: $h3;
     @include reset;
     margin-bottom: 2rem;
+
+    font-size: $h6;
     color: $medium;
   }
 
   &__links {
-    @include flex(row, space-between, center);
-    gap: 3rem;
+    @include flex;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .home {
+    height: 100vh;
+
+    h1 {
+      display: block;
+    }
+
+    &__links {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .home {
+    height: 100vh;
+
+    h1 {
+      font-size: $large;
+      display: block;
+    }
+
+    p {
+      font-size: $h4;
+    }
   }
 }

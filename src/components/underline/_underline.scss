@@ -2,7 +2,8 @@
   @include flex(row);
   gap: 0.6rem;
   position: relative;
-  font-size: $h4;
+
+  font-size: $h6;
 
   &::before {
     content: "";
@@ -17,5 +18,11 @@
 
   &:hover::before {
     width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .underline {
+    font-size: $h5;
   }
 }

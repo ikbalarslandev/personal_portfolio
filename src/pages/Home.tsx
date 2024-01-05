@@ -2,7 +2,7 @@ import Underline from "../components/underline/Underline";
 
 const Home = () => {
   return (
-    <div className="home">
+    <section className="home">
       <h1>
         Hey I`m <strong>Ikbal arslan</strong>
       </h1>
@@ -11,7 +11,7 @@ const Home = () => {
         <Underline text="see my projects" />
         <Underline text="more about me" />
       </div>
-    </div>
+    </section>
   );
 };
 
