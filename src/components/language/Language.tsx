@@ -7,11 +7,7 @@ const Language = () => {
     language === "EN" ? setLanguage("TR") : setLanguage("EN");
   };
 
-  return (
-    <div>
-      <button onClick={handleClick}>{language}</button>
-    </div>
-  );
+  return <button onClick={handleClick}>{language}</button>;
 };
 
 export default Language;

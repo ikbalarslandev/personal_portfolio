@@ -4,17 +4,14 @@ import Language from "../components/language/Language";
 
 const Nav = () => {
   return (
-    <div className="nav">
-      <div className="nav__logo">IA</div>
+    <nav className="nav">
+      <button className="nav__logo">IA</button>
       <div className="nav__items">
-        <div className="nav__items-toggle">
-          <Language />
-          <Theme />
-        </div>
-
+        <Language />
+        <Theme />
         <Hamburger />
       </div>
-    </div>
+    </nav>
   );
 };
 

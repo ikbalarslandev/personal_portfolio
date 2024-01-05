@@ -1,8 +1,8 @@
 .theme {
   &__icon {
-    color: $color; // Replace $color with your desired color value
-    transition: transform 0.3s ease; // Add transition for color change
-    font-size: $h5;
+    color: $medium;
+    transition: transform 0.3s ease;
+    font-size: $small;
     width: 2rem;
   }
   &__icon:hover {
@@ -11,19 +11,5 @@
 
   &:active {
     transform: translateY(1px);
-  }
-}
-
-@media (prefer-colors-theme: dark) {
-  body {
-    background-color: $background-color; // Replace $background-color with your desired color value
-    color: $color; // Replace $color with your desired color value
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: $background-color; // Replace $background-color with your desired color value
-    color: red; // Replace $color with your desired color value
   }
 }

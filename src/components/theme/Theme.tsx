@@ -17,18 +17,14 @@ const Theme = () => {
   const sun = <FontAwesomeIcon icon={faSun} className="theme__icon" />;
   const moon = <FontAwesomeIcon icon={faMoon} className="theme__icon" />;
 
-  return (
-    <div>
-      {theme === "light" ? (
-        <button className="theme" onClick={handleOnClick}>
-          {sun}
-        </button>
-      ) : (
-        <button className="theme" onClick={handleOnClick}>
-          {moon}
-        </button>
-      )}
-    </div>
+  return theme === "light" ? (
+    <button className="theme" onClick={handleOnClick}>
+      {sun}
+    </button>
+  ) : (
+    <button className="theme" onClick={handleOnClick}>
+      {moon}
+    </button>
   );
 };
 
