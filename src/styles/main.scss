@@ -6,6 +6,7 @@ body {
   color: $color;
 
   @include reset;
+  overflow-x: hidden;
 
   font-family: "Text";
 

@@ -10,8 +10,6 @@ const Theme = () => {
   const [theme, setTheme] = useState(defaultTheme);
 
   const handleOnClick = () => {
-    console.log(`defaultTheme: ${defaultTheme}`);
-    console.log(theme);
     const body = document.querySelector("body");
 
     if (theme === "light") {

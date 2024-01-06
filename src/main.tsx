@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Router from "./Router";
 import * as Sentry from "@sentry/react";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 Sentry.init({
   dsn: "https://d9324e5033c34b742dba84743a787a64@o4506468042539008.ingest.sentry.io/4506507898912768",
@@ -23,7 +25,9 @@ Sentry.init({
 });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <Router />
-  </React.StrictMode>
+  <Provider store={store}>
+    <React.StrictMode>
+      <Router />
+    </React.StrictMode>
+  </Provider>
 );

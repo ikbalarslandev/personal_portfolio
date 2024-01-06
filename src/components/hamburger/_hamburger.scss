@@ -7,7 +7,7 @@
 
   & span {
     @include flex;
-    border: 0.126rem solid $medium;
+    border: 0.126rem solid $nav-color;
     border-radius: 999px;
     @include box(0.08rem);
   }

@@ -4,7 +4,7 @@
   position: relative;
 
   font-size: $small;
-  color: $medium;
+  color: $nav-color;
 
   position: absolute;
   top: 0;
@@ -13,6 +13,7 @@
 
   &__logo {
     font-size: $h4;
+    color: $nav-color;
   }
 
   &__items {
@@ -30,8 +31,6 @@
 
     display: none;
     transition: left 0.3 ease;
-
-    background-color: $background-color;
   }
 }
 

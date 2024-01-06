@@ -1,20 +1,17 @@
 import Width from "../../components/width/Width";
+import data from "../../data";
+import { useSelector } from "react-redux";
 
 const Menu = () => {
+  const language = useSelector((state: any) => state.language.language);
+  const content = data[language as keyof typeof data].menu_items;
   return (
     <ul className="nav__menu">
-      <li>
-        <Width text="HOME" number={1} />
-      </li>
-      <li>
-        <Width text="WORK" number={2} />
-      </li>
-      <li>
-        <Width text="ABOUT" number={3} />
-      </li>
-      <li>
-        <Width text="CONTACT" number={4} />
-      </li>
+      {content.map((item: string, index: number) => (
+        <li key={index}>
+          <Width text={item} number={index + 1} />
+        </li>
+      ))}
     </ul>
   );
 };

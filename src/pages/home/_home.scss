@@ -1,12 +1,12 @@
 .home {
   @include flex;
   margin: 3rem;
-
   height: 90vh;
 
   h1 {
     @include flex;
     @include reset;
+    text-align: center;
 
     color: $dark;
     strong {
@@ -20,7 +20,7 @@
     margin-bottom: 2rem;
 
     font-size: $h6;
-    color: $medium;
+    color: $dark;
   }
 
   &__links {
