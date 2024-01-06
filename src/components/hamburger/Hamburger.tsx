@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Hamburger = () => {
   const [active, setActive] = useState(false);
@@ -6,8 +6,7 @@ const Hamburger = () => {
   const menu = document.querySelector(".nav__menu");
   const home = document.querySelector(".home");
 
-  const handleClick = () => {
-    setActive(!active);
+  useEffect(() => {
     if (active) {
       menu?.classList.add("show-menu");
       home?.classList.add("hide");
@@ -15,6 +14,10 @@ const Hamburger = () => {
       menu?.classList.remove("show-menu");
       home?.classList.remove("hide");
     }
+  }, [active]);
+
+  const handleClick = () => {
+    setActive(!active);
   };
 
   return (

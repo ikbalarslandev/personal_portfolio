@@ -4,14 +4,25 @@ import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Theme = () => {
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+  let defaultTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+  const [theme, setTheme] = useState(defaultTheme);
 
   const handleOnClick = () => {
-    toggleTheme();
+    console.log(`defaultTheme: ${defaultTheme}`);
+    console.log(theme);
+    const body = document.querySelector("body");
+
+    if (theme === "light") {
+      body?.classList.remove("overrideLight");
+      body?.classList.add("overrideDark");
+    } else {
+      body?.classList.remove("overrideDark");
+
+      body?.classList.add("overrideLight");
+    }
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   const sun = <FontAwesomeIcon icon={faSun} className="theme__icon" />;
